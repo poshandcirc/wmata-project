@@ -17,13 +17,13 @@ We still encourage you to get actual api keys, add them to the `.env`, and use t
 
 ## Prerequisites:
 
-This project assumes you have both `php` and `composer` installed on your computer. Composer is a package management system for `php`. Instructions for download and use are available [here](https://getcomposer.org/download/).
+This project assumes you have both `php` and `composer` installed on your computer. Composer is a package management system for `php`. Instructions for download is available [here](https://getcomposer.org/download/). If you want to make composer available globally, instructions are available [here](https://getcomposer.org/doc/00-intro.md#globally) 
 
 ## Installation:
 
 1. Navigate to a directory where you’re storing your code.
 
-2. Clone the Repo: `https://github.com/DSPolitical/wmata-project.git`
+2. Fork and Clone the Repo: `https://github.com/DSPolitical/wmata-project`
 
 3. Navigate to Directory: `cd wmata-times`
 
@@ -31,7 +31,7 @@ This project assumes you have both `php` and `composer` installed on your comput
 
 5. *If you’re using the real api*: Edit the .env file and add in your API tokens `METRO_API_KEY` and `METRO_API_SECRET` and set `USE_REAL_API` to `true`.
 
-6. Install the dependencies for the project: `composer install`
+6. Install the dependencies for the project: *If you have composer available globally:* `composer install`, *If composer is not available globally:* `php /path/to/composer.phar install`
 
 7. Run localhost in background to view the site locally: `php -S localhost:8000 -t public`
 
@@ -44,6 +44,8 @@ Build a front-end application that meets the following requirements:
 * As a user, when I select a station, I expect to see information about that station.
 * As a user, when I am looking at a list of train arrivals, I expect that the most imminent arrival time will be highlighted.
 * BONUS: As a User, if I make the same request (line + station) more than once per minute, it returns a cached value from the vuex store.
+
+## Working Within the Lumen Framework
 
 These are the front-end files you’re looking for:
 * Base HTML file: `resources/views/base.blade.php` 
@@ -77,3 +79,9 @@ There are two API routes set up for you to use
 This will return information about the trains scheduled to arrive in the station
 
 The results of both of these is the raw result from the [API queries](https://developer.wmata.com/docs/services/547636a6f9182302184cda78/operations/547636a6f918230da855363f).
+
+## Important Note:
+
+If you would like to make your own project and only use the exposed API rather than build this within the provided lumen project, that's totally okay!
+ 
+The goal here is to see your code. If you'd prefer to make this project within the Vue or React CLI, for example, go for it!
