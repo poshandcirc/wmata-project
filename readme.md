@@ -82,6 +82,6 @@ The results of both of these is the raw result from the [API queries](https://de
 
 ## Important Note:
 
-If you would like to make your own project and only use the exposed API rather than build this within the provided lumen project, that's totally okay!
+If you would like to make your own project and only use the exposed API routes from this install rather than build entirely within this repo, that's totally okay!
  
 The goal here is to see your code. If you'd prefer to make this project within the Vue or React CLI, for example, go for it!
