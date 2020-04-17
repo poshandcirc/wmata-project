@@ -43,7 +43,7 @@ Build a front-end application that meets the following requirements:
 * As a user, when I select a station and a train line, I expect to see a list of arrival times for incoming trains of that line at that station.
 * As a user, when I select a station, I expect to see information about that station.
 * As a user, when I am looking at a list of train arrivals, I expect that the most imminent arrival time will be highlighted.
-* As a User, if I make the same request (line + station) more than once per minute, it returns a cached value from the vuex store.
+* BONUS: As a User, if I make the same request (line + station) more than once per minute, it returns a cached value from the vuex store.
 
 These are the front-end files you’re looking for:
 * Base HTML file: `resources/views/base.blade.php` 
