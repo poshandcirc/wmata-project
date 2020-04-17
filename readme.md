@@ -17,7 +17,7 @@ We still encourage you to get actual api keys, add them to the `.env`, and use t
 
 ## Prerequisites:
 
-This project assumes you have both `php` and `composer` installed on your computer. Composer is a package management system for `php`. Instructions for download is available [here](https://getcomposer.org/download/). If you want to make composer available globally, instructions are available [here](https://getcomposer.org/doc/00-intro.md#globally) 
+This project assumes you have both `php` and `composer` installed on your computer. Composer is a package management system for `php`. Instructions for download is available [here](https://getcomposer.org/download/). If you want to make composer available globally, instructions are available [here](https://getcomposer.org/doc/00-intro.md#globally).
 
 ## Installation:
 
@@ -72,7 +72,7 @@ There are two API routes set up for you to use
 
 1. Sending a request to fetch results of a line: `api/lines/{line}`
 
-    This will return a list of stations with their codes which can be used to ping the other endpoint.
+This will return a list of stations with their codes which can be used to ping the other endpoint.
 
 2. Sending a request to fetch the results of a station: `api/lines/{line}/stations/{station}`
 
