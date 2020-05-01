@@ -46,7 +46,7 @@ const station = Vue.component('station', {
         }
     },
     mounted () {
-        let queryString = this.name.replace(" ", "+").concat("+station");
+        let queryString = this.name.replace(" ", "+").concat("+subway+station");
         this.searchURL = "https://www.google.com/maps/search/?api=1&query=".concat(queryString);
     },
     watch: {
