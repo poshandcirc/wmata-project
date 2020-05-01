@@ -1,3 +1,6 @@
+## Branched Developer Notes:
+This was my first time working with Vue – thank you for the fun project! I'm glad I had the opportunity to explore some new technologies.
+
 # Simple MTA API App
 
 ## Introduction:
