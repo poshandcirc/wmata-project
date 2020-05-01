@@ -1,3 +1,13 @@
+body {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.placeholder {
+    color: gray;
+}
+
+/* Line Color Classes - Button Background */
 .Red {
     background-color: red;
 }
@@ -25,6 +35,38 @@
     color: black;
 }
 
+/* Station Color Classes - Buttons and Circles */
+.RD {
+    border-color: red;
+    fill: red;
+}
+
+.BL {
+    border-color: blue;
+    fill: blue;
+}
+
+.YL {
+    border-color: yellow;
+    fill: yellow;
+}
+
+.OR {
+    border-color: orange;
+    fill: orange;
+}
+
+.GR {
+    border-color: green;
+    fill: green;
+}
+
+.SV {
+    border-color: darkgray;
+    fill: darkgray;
+}
+
+/* Line Buttons */
 .line-btn {
     /* float: center;
     margin: auto; */
@@ -34,4 +76,24 @@
 .line-btn button {
     width: 25vw;
     margin: 0 10px;
+}
+
+/* Station Buttons */
+.station-btn {
+    text-align: center;
+    align-content: center;
+    width: 75vw;
+    margin: auto;
+}
+
+.station-btn button {
+    margin: 10px auto;
+}
+
+.station-btn .card {
+    margin: auto;
+}
+
+.station-btn .table tbody tr:first-child {
+    background-color: #FFCCCB;
 }

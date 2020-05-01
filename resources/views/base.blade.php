@@ -6,10 +6,8 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="https://unpkg.com/vuex@3.1.3/dist/vuex.js"></script>
-	<script src="https://unpkg.com/vue-router@3.1.6/dist/vue-router.js"></script>
 	<script type="text/javascript" src="js/app.js" defer></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -21,14 +19,29 @@
 	<div id="app">
 		<h1>WMATA Times App<h1>
 		<div class="line-btn">
-			<button v-for="line in lineCodes" v-on:click="selectedCode = line.code" :class="line.color" class="btn btn-outline-light">
+			<button v-for="line in lineCodes" 
+				v-on:click="selectedCode = line.code" 
+				:class="line.color" 
+				class="btn btn-outline-light">
 				@{{ line.color }}
 			</button>
 		</div>
-		<div v-for="result in results">
-			<div>
-				<station v-bind:name=result.Name>
-				</station>
+		<div class="station-btn">
+			<p class="placeholder small" v-if="selectedCode == null"><em><br>Select a metro line to see stations and times.</em></p>
+			<div v-for="result in results">
+				<div>
+					<station ref="station" v-bind:name=result.Name 
+						v-bind:colorcode="selectedCode"
+						v-bind:stationcode=result.Code
+						v-bind:address=result.Address.Street
+						v-bind:city=result.Address.City
+						v-bind:state=result.Address.State
+						v-bind:zip=result.Address.Zip
+						v-bind:linecode2=result.LineCode2
+						v-bind:linecode3=result.LineCode3
+						v-bind:linecode4=result.LineCode4>
+					</station>
+				</div>
 			</div>
 		</div>
 	</div>
