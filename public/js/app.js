@@ -1,4 +1,6 @@
 const vm = new Vue({
+    // this.lineCodes: hard-coded the codes since there were only 6 - I think there might be a better way
+    // watch: will display station when line button is clicked
     el: '#app',
     data () {
         return {
@@ -20,9 +22,10 @@ const vm = new Vue({
 
 /* Component for station display based on lines */
 const station = Vue.component('station', {
-    // Note: the "showInfoBool" was my way of doing a very crude rudimentary toggle
+    // this.showInfoBool: was my way of doing a very crude rudimentary toggle
     // because I couldn't get the bootstrap collapse to work with Vue -- this is me
     // acknowledging that it was a quick (but admittedly dirty) fix
+    // mounted: will take name and turn it into query format for Google Maps search URL
     props: {
         name: String, 
         colorcode: String,
