@@ -7,7 +7,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript" src="js/app.js" defer></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -18,6 +17,7 @@
 <body>
 	<div id="app">
 		<h1>WMATA Times App<h1>
+		<!-- Line Select Buttons -->
 		<div class="line-btn">
 			<button v-for="line in lineCodes" 
 				v-on:click="selectedCode = line.code" 
@@ -26,6 +26,7 @@
 				@{{ line.color }}
 			</button>
 		</div>
+		<!-- Stations -->
 		<div class="station-btn">
 			<p class="placeholder small" v-if="selectedCode == null"><em><br>Select a metro line to see stations and times.</em></p>
 			<div v-for="result in results">
