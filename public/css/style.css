@@ -1,0 +1,37 @@
+.Red {
+    background-color: red;
+}
+
+.Blue {
+    background-color: blue;
+}
+
+.Yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.Orange {
+    background-color: orange;
+    color: black;
+}
+
+.Green {
+    background-color: green;
+}
+
+.Silver {
+    background-color: darkgray;
+    color: black;
+}
+
+.line-btn {
+    /* float: center;
+    margin: auto; */
+    text-align: center;
+}
+
+.line-btn button {
+    width: 25vw;
+    margin: 0 10px;
+}
