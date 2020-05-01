@@ -26,6 +26,7 @@ const station = Vue.component('station', {
     // because I couldn't get the bootstrap collapse to work with Vue -- this is me
     // acknowledging that it was a quick (but admittedly dirty) fix
     // mounted: will take name and turn it into query format for Google Maps search URL
+    // TODO: connect lineCodes for StationTogether as transfer options
     props: {
         name: String, 
         colorcode: String,
